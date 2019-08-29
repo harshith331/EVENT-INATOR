@@ -1,0 +1,15 @@
+{
+  "name": "event-inator",
+  "version": "1.0.0",
+  "description": "events database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "harshith",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
