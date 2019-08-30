@@ -8,6 +8,13 @@ var app= express();
 app.set("view engine","ejs");
 
 
+var campgrounds = [
+           {name: "Salmon Creek", image: "https://farm9.staticflickr.com/8225/8524305204_43934a319d.jpg",date:"16.5.19"},
+           {name: "Granite Hill", image: "https://farm5.staticflickr.com/4016/4369518024_0f64300987.jpg",date:"14.5.19"},
+           {name: "Sunset Beach Rest", image: "http://photosforclass.com/download/14435096036",date:"13.4.19"}
+]; 
+
+
 app.get("/",function(req,res){
    //landing page
 	res.render("landing");
@@ -16,7 +23,7 @@ app.get("/",function(req,res){
 
 app.get("/events",function(req,res){
 	
-	res.render("MainPage");
+	res.render("MainPage", {campgrounds: campgrounds});
 });
 
 
